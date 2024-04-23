@@ -1,1 +1,1 @@
-https://jxnxthxnz.github.io/Lab2_Starter/
+https://jxnxthxnz.github.io/sp24-cse110-lab3/
