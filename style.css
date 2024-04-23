@@ -1,0 +1,104 @@
+
+:root {
+    --backup-bg: hsl(16, 100%, 66%);
+}
+body {
+    background-color: var(--backup-bg, #ffc0cb); 
+}
+.container {
+    width: 80vw; 
+    padding: 2em;
+    border: 1px solid black; 
+}
+#agenda {
+    margin-top: 1in;
+    margin-right: 5vh;
+    margin-bottom: 20px;
+    margin-left: 5em;
+    padding: 15px;
+    border-width: 1vw;
+    border-style: solid;
+    border-color: paleturquoise;
+    border-radius: 10cm;
+    display: inline-block;
+    position: fixed;
+}
+p {
+    color: lightcyan;
+    text-align: center;
+    text-decoration: underline;
+}
+#lastTime {
+    display: none;
+}
+#media {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    position: relative;
+}
+button:hover {
+    background-color: papayawhip;
+  }
+button:active {
+    transform: scale(0.5); 
+}
+nav ul {
+    display: flex;           
+    justify-content: space-around;
+    align-items: center;     
+    padding: 0;             
+}
+#media {
+    display: grid;                               
+    grid-gap: 10px;                           
+    padding: 10px;  
+    align-items: center;                        
+}
+@media (width <= 1250px) {
+    nav ul {
+        text-align: center;
+    }
+}
+* {
+    margin: 5px;
+    padding: 5px;
+}
+h3 {
+    font-size: 24px;
+}
+.test {
+    color: color-mix(srgb, color(srgb 1 0 0) 50%, color(srgb 0 0 1) 50%);
+}
+input[type="text"] {
+    border: 10px solid #ccc;
+}
+p:hover {
+    color: plum;
+}
+h1, h2 {
+    color: color(display-p3 0 0.5 0);
+}
+nav ul li {
+    list-style-type: none;
+}
+#lastTime > div {
+    border-bottom: 1px solid black;
+}
+#agenda ~ section {
+    padding: 15px;
+}
+hr + section {
+    background-color: #f4f4f4;
+}
+input.important {
+    border: 2px solid red;
+}
+section:has(p) {
+    border: 1px solid blue;
+}
+h1:has(+ p) {
+    margin-bottom: 0;
+}
+  
